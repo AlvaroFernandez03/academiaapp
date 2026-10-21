@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administración | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container section">
+  <div class="titulo-pagina con-accion">
+    <div>
+      <h1>Administración</h1>
+      <span class="cinturon negro"></span>
+    </div>
+    <a class="btn btn-outline btn-sm" href="admin-cuotas.html">Cuotas y pagos</a>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="resumen" class="is-active">Resumen</button>
+    <button data-tab="horario">Horario</button>
+    <button data-tab="disciplinas">Disciplinas y grupos</button>
+    <button data-tab="equipo">Equipo</button>
+    <button data-tab="alumnos">Alumnos</button>
+    <button data-tab="academia">Academia</button>
+    <button data-tab="emails">Emails</button>
+  </nav>
+
+  <div id="aviso"></div>
+  <section id="contenido"></section>
+</main>
+
+<div id="modal" class="modal-backdrop hidden"></div>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/admin-horario.js"></script>
+<script src="js/admin-academia.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

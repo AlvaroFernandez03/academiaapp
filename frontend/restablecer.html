@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Elegir contraseña nueva | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <div class="form-card">
+    <h2 style="margin-bottom:6px;">Elegir contraseña nueva</h2>
+    <p class="muted" style="font-size:0.88rem; margin-bottom:16px;">Al cambiarla, se cerrará la sesión en todos los dispositivos donde estuviera abierta.</p>
+    <form id="reset-form">
+      <div class="field"><label for="n-pass">Contraseña nueva (mín. 8 caracteres)</label><input type="password" id="n-pass" minlength="8" required autocomplete="new-password"></div>
+      <div class="field"><label for="n-pass2">Repítela</label><input type="password" id="n-pass2" minlength="8" required autocomplete="new-password"></div>
+      <button type="submit" class="btn btn-primary btn-block">Guardar contraseña</button>
+      <p id="reset-msg" class="form-message"></p>
+    </form>
+  </div>
+</main>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/restablecer.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi cuenta | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container section">
+  <div class="titulo-pagina">
+    <h1>Mi cuenta</h1>
+    <span class="cinturon"></span>
+    <p>Tus datos de acceso y de contacto.</p>
+  </div>
+  <div id="aviso-cuenta"></div>
+
+  <div class="form-card" style="margin-left:0;">
+    <h3 style="margin-bottom:14px;">Tus datos</h3>
+    <div class="field"><label for="a-name">Nombre</label><input id="a-name"></div>
+    <div class="field"><label for="a-email">Email</label><input id="a-email" disabled></div>
+    <div class="field"><label for="a-phone">Teléfono</label><input id="a-phone"></div>
+    <button class="btn btn-primary" id="guardar-datos">Guardar cambios</button>
+    <p id="datos-msg" class="form-message"></p>
+  </div>
+
+  <div class="form-card" style="margin-left:0;">
+    <h3 style="margin-bottom:14px;">Cambiar contraseña</h3>
+    <div class="field"><label for="p-current">Contraseña actual</label><input type="password" id="p-current"></div>
+    <div class="field"><label for="p-new">Nueva contraseña (mín. 8 caracteres)</label><input type="password" id="p-new" minlength="8" autocomplete="new-password"></div>
+    <div class="field"><label for="p-confirm">Repite la nueva contraseña</label><input type="password" id="p-confirm" minlength="8" autocomplete="new-password"></div>
+    <button class="btn btn-primary" id="cambiar-password">Cambiar contraseña</button>
+    <p id="password-msg" class="form-message"></p>
+  </div>
+</main>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/mi-cuenta.js"></script>
+</body>
+</html>

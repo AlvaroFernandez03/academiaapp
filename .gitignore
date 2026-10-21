@@ -1,0 +1,12 @@
+node_modules/
+.env
+backend/db/academia.db
+backend/db/academia.db-shm
+backend/db/academia.db-wal
+backend/uploads/
+backend/backups/
+*.db-journal
+
+# Copias que deja Claude al hacer cambios (no hace falta subirlas)
+copia-antes-de-cambios-*.zip
+.claude/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasar lista | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container section">
+  <div class="titulo-pagina">
+    <h1>Pasar lista</h1>
+    <span class="cinturon negro"></span>
+    <p>Elige la clase y el día. La asistencia se marca el mismo día de la clase (o después, si se te olvidó).</p>
+  </div>
+
+  <div class="controles-lista">
+    <div class="field">
+      <label for="sel-clase">Clase</label>
+      <select id="sel-clase"><option value="">Elige una clase…</option></select>
+    </div>
+    <div class="field campo-fecha">
+      <label for="sel-fecha">Día</label>
+      <input type="date" id="sel-fecha">
+    </div>
+  </div>
+
+  <div id="lista-alumnos"></div>
+</main>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/pasar-lista.js"></script>
+</body>
+</html>

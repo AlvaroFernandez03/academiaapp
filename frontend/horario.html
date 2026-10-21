@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container section">
+  <div class="titulo-pagina">
+    <h1>Horario semanal</h1>
+    <span class="cinturon"></span>
+    <p>Pulsa una clase para ver los detalles y reservar plaza.</p>
+  </div>
+
+  <div class="cal-barra">
+    <div class="cal-semana" role="group" aria-label="Semana">
+      <button class="cal-flecha" id="semana-anterior" aria-label="Semana anterior">‹</button>
+      <div class="cal-semana-texto" id="semana-texto" aria-live="polite"></div>
+      <button class="cal-flecha" id="semana-siguiente" aria-label="Semana siguiente">›</button>
+      <button class="btn btn-outline btn-sm" id="semana-hoy">Hoy</button>
+    </div>
+    <div class="cal-filtros" id="filtros" role="group" aria-label="Disciplinas"></div>
+  </div>
+
+  <div id="calendario" class="cal-zona"><p class="muted">Cargando el horario…</p></div>
+</main>
+
+<div id="panel-fondo" class="panel-fondo hidden"></div>
+<aside id="panel-clase" class="panel-clase" role="dialog" aria-modal="true" aria-labelledby="panel-titulo" hidden></aside>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/horario.js"></script>
+</body>
+</html>

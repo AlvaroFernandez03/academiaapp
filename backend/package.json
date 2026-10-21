@@ -1,0 +1,27 @@
+{
+  "name": "academia-backend",
+  "version": "1.0.0",
+  "description": "Gestión de academia de artes marciales: alumnos, familias, clases, reservas y cuotas",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --experimental-sqlite server.js",
+    "dev": "node --experimental-sqlite --watch server.js",
+    "test": "node --experimental-sqlite --no-warnings tests/billing.test.js && node --experimental-sqlite --no-warnings tests/admin.test.js && node tests/api.test.js",
+    "test:cuotas": "node --experimental-sqlite --no-warnings tests/billing.test.js",
+    "test:admin": "node --experimental-sqlite --no-warnings tests/admin.test.js",
+    "test:api": "node tests/api.test.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "stripe": "^17.7.0"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuotas y pagos | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container section">
+  <div class="titulo-pagina con-accion">
+    <div>
+      <h1>Cuotas y pagos</h1>
+      <span class="cinturon negro"></span>
+    </div>
+    <a class="btn btn-outline btn-sm" href="admin.html">Volver a Administración</a>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="cuotas" class="is-active">Cuotas</button>
+    <button data-tab="pagos">Pagos</button>
+    <button data-tab="planes">Planes</button>
+    <button data-tab="ajustes">Ajustes</button>
+  </nav>
+
+  <div id="aviso"></div>
+  <section id="contenido"></section>
+</main>
+
+<div id="modal" class="modal-backdrop hidden"></div>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/admin-cuotas.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceder | AcademiaApp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="container">
+  <div class="form-card">
+    <h2 style="margin-bottom:16px;">Iniciar sesión</h2>
+    <form id="login-form">
+      <div class="field"><label for="l-email">Email</label><input type="email" id="l-email" required></div>
+      <div class="field"><label for="l-password">Contraseña</label><input type="password" id="l-password" required></div>
+      <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+      <p id="login-msg" class="form-message"></p>
+      <p style="margin-top:10px; font-size:0.86rem;"><button type="button" class="btn-link" id="btn-olvido">¿Has olvidado tu contraseña?</button></p>
+    </form>
+
+    <form id="forgot-form" class="hidden" style="margin-top:14px; padding-top:14px; border-top:1px solid var(--line);">
+      <p style="font-size:0.88rem; margin-bottom:10px;">Escribe el email de tu cuenta y te enviaremos un enlace para elegir una contraseña nueva.</p>
+      <div class="field"><label for="f-email">Email</label><input type="email" id="f-email" required></div>
+      <button type="submit" class="btn btn-outline btn-block">Enviar enlace</button>
+      <p id="forgot-msg" class="form-message"></p>
+    </form>
+
+    <h2 id="registro" style="margin:26px 0 16px; padding-top:22px; border-top:1px solid var(--line); scroll-margin-top:90px;">Crear cuenta familiar</h2>
+    <form id="register-form">
+      <div class="field"><label for="r-name">Tu nombre completo</label><input id="r-name" required></div>
+      <div class="field"><label for="r-email">Email</label><input type="email" id="r-email" required></div>
+      <div class="field"><label for="r-phone">Teléfono</label><input id="r-phone"></div>
+      <div class="field"><label for="r-password">Contraseña (mín. 8 caracteres)</label><input type="password" id="r-password" minlength="8" required autocomplete="new-password"></div>
+
+      <div class="checkbox-field">
+        <input type="checkbox" id="r-practices">
+        <label for="r-practices">Yo también entreno (además de apuntar a mis hijos)</label>
+      </div>
+      <div class="field hidden" id="r-birthdate-field">
+        <label for="r-birthdate">Tu fecha de nacimiento</label>
+        <input type="date" id="r-birthdate">
+      </div>
+
+      <p class="muted" style="font-size:0.82rem; margin-bottom:14px;">
+        Podrás añadir a tus hijos/as después, desde "Mi familia".
+      </p>
+
+      <div class="checkbox-field" style="align-items:flex-start;">
+        <input type="checkbox" id="r-privacy" required style="margin-top:3px;">
+        <label for="r-privacy">He leído y acepto el <a href="privacidad.html" target="_blank" rel="noopener" class="btn-link">aviso de privacidad</a>, también en nombre de los menores que añada a mi cuenta.</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Crear cuenta</button>
+      <p id="register-msg" class="form-message"></p>
+    </form>
+
+    <!-- Solo se enseña si la base de datos tiene las cuentas de ejemplo (ver js/acceso.js). -->
+    <p id="cuentas-demo" class="hidden" style="margin-top:18px; padding-top:16px; border-top:1px solid var(--line); font-size:0.8rem; color:var(--ink-faint); line-height:1.7;">
+      Cuentas de prueba (contraseña <code>academia123</code>):<br>
+      <code>carlos@ejemplo.com</code> (adulto) · <code>beatriz@ejemplo.com</code> (familia con 2 hijos)<br>
+      <code>javier.instructor@academia.com</code> (instructor) · <code>admin@academia.com</code>
+    </p>
+  </div>
+</main>
+
+<footer>AcademiaApp · <a href="privacidad.html">Aviso de privacidad</a></footer>
+
+<script src="js/common.js"></script>
+<script src="js/acceso.js"></script>
+</body>
+</html>
